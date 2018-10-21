@@ -1,0 +1,267 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+$primary-font-stack: Raleway, sans-serif;
+$secondary-font-stack: 'Satisfy', cursive;
+
+$background-color: #04080F;
+$primary-color: #FFF;
+$accent-color: #FFCB2F;
+$secondary-text-color: gray;
+
+@keyframes wiggle {
+    5% { transform: rotate(12deg); }
+    50% { transform: rotate(-10deg); }
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    background-color: $background-color;
+    font-family: $primary-font-stack;
+    color: $primary-color;
+}
+
+#hero {
+    background-image: url(./../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#links ul {
+    list-style: none;
+    position: absolute;
+    margin-top: 10px;
+
+    li {
+        text-shadow: 1px 1px 1px $background-color;
+        display: inline;
+        font-size: 28px;
+        margin-right: 26px;
+        opacity: 0.9;
+    }
+
+    .fa:hover {
+        color: $accent-color;
+        opacity: 1;
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+    }
+
+    a {
+        color: $primary-color;
+        opacity: 0.9;
+    }
+}
+
+#nav ul {
+    list-style: none;
+    position: absolute;
+    right: 38px;
+
+    li {
+        display: inline;
+        margin-left: 24px;
+        opacity: 0.9;
+        text-transform: capitalize;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $accent-color;
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}
+
+#hero-contents {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    justify-content: center;
+    margin-top: 46px;
+    z-index: 0;
+
+    #intro-greeting { 
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: -36px;
+        text-shadow: 1px 1px $background-color;
+        
+        span { 
+            animation: appear 3s ease-in 1;
+            color: $accent-color;
+            font-family: $secondary-font-stack; 
+            font-size: 1.4em;
+            font-weight: 400;
+            margin-left: 6px;
+        }
+    }
+
+    .profile {
+        animation-name: wiggle, appear;
+        animation-duration: 1.2s, 1s;
+        animation-delay: 0.5s, 0;
+        animation-direction: forward, forward;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275), ease-in;
+        animation-iteration-count: 1, 1;
+        border: 1px solid $primary-color;
+        border-radius: 150px;
+        box-shadow: 1px 1px 2px $background-color;
+        height: 150px;
+        margin-top: -18px;
+        width: 150px;
+        z-index: 10;
+    }
+
+    #download-btn {
+        animation: appear 2.5s ease-in 1;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgba(255,255,255,0.5);
+        border-radius: 34px;
+        box-shadow: 1px 2px 2px $background-color;
+        color: $primary-color;
+        cursor: pointer;
+        font-family: $secondary-font-stack;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 4px 24px;
+        margin-top: 28px;
+        text-decoration: none;
+        text-transform: capitalize;
+        z-index: 10;
+    }
+
+    #download-btn:hover {
+        border: 1px solid $accent-color;
+        box-shadow: 0 0.5px 0 $background-color;
+        color: $accent-color;
+    }
+}
+
+.header {
+    font-family: $secondary-font-stack;
+    font-size: 4em;
+    margin-top: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    z-index: 1;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    .item {
+        background-color: darkblue;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 2px $background-color;
+        float: left;
+        margin: 10px 10px;
+        max-width: 390px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        img {
+            filter: grayscale(1);
+            height: 200px;
+            max-width: 100%;
+            opacity: 0.9;
+            vertical-align: top;
+        }  
+
+        img:hover { 
+            filter: grayscale(0); 
+            transition: opacity 0.7s linear;
+            opacity: 1;
+        }
+    }
+}
+
+#resume {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.resume-header { 
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-left: 40px; 
+    text-transform: uppercase;
+}
+
+.resume-section {
+    margin: 0 40px 20px 40px;
+}
+
+#resume-skills {
+    ul { list-style: none; }
+    li { margin-bottom: 20px; }
+    .skill-progress {
+        border: $secondary-text-color 1px solid;
+        height: 4px;
+        margin-top: 10px;
+        width: 80%;
+        z-index: 1;
+        .progress {
+            background-color: $accent-color;
+            height: 4px;
+            z-index: 0;
+        }
+        #java-progress { width: 85%; }
+        #haskell-progress { width: 60%; }
+        #c-cpp-progress { width: 60%; }
+        #ts-progress { width: 70%; }
+        #html-progress { width: 90%; }
+        #css-progress { width: 95%; }
+    }
+}
+
+#resume-projects {
+    h3 {
+        font-size: 1em;
+        text-transform: capitalize;
+    }
+    .project-descript {
+        color: $secondary-text-color;
+        font-size: 0.8em;
+    }
+}
+
+.item-timeline { 
+    color: $secondary-text-color;
+    font-style: italic;
+    margin-top: -15px;
+}
+
+#resume-education {
+    .resume-education-descript {
+        color: $secondary-text-color;
+        font-size: 0.9em;
+        margin-top: -15px;
+    }
+}
+
+#resume-work-experience {
+    ul { font-size: 0.7em; }
+    li { margin-bottom: 3px; }
+}
+
+.line {
+    border-top: $accent-color 1px solid;
+    height: 1px;;
+    margin: -73px auto 50px auto;
+    width: 96%;
+    z-index: 0;
+}
