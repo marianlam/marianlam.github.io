@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#hero {
+  #profile-image {
+    border-radius: 200px;
+    cursor: pointer;
+    height: 20vh;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 2px 4px 8px gray;
+    position: relative;
+  }
+  margin-bottom: -60px;
+}
+
+#projects {
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: auto;
+  #projects-title {
+    margin: 30px auto 0 auto;
+    display: block;
+    opacity: 0.85;
+  }
+  #projects-gallery {
+    display: flex;
+    flex-direction: column;
+    .gallery-item {
+      margin: 8px auto;
+      padding: 16px;
+      background-color: white;
+      box-shadow: 2px 4px 8px gray;
+      .gallery-item-image {
+        cursor: pointer;
+        width: 70vw;
+      }
+      .gallery-item-caption {
+        margin-top: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
