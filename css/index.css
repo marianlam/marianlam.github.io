@@ -3,13 +3,14 @@ body {
   padding: 0; }
 
 #hero {
-  margin-bottom: -60px; }
+  margin-bottom: -60px;
+  text-align: center; }
   #hero #profile-image {
     border-radius: 200px;
     cursor: pointer;
     height: 20vh;
     margin: 20px auto;
-    display: block;
+    display: inline-block;
     box-shadow: 2px 4px 8px gray;
     position: relative; }
 
@@ -20,7 +21,8 @@ body {
   #projects #projects-title {
     margin: 30px auto 0 auto;
     display: block;
-    opacity: 0.85; }
+    opacity: 0.85;
+    width: 22vw; }
   #projects #projects-gallery {
     display: flex;
     flex-direction: column; }

@@ -4,16 +4,17 @@ body {
 }
 
 #hero {
+  margin-bottom: -60px;
+  text-align: center;
   #profile-image {
     border-radius: 200px;
     cursor: pointer;
     height: 20vh;
     margin: 20px auto;
-    display: block;
+    display: inline-block;
     box-shadow: 2px 4px 8px gray;
     position: relative;
   }
-  margin-bottom: -60px;
 }
 
 #projects {
@@ -24,6 +25,7 @@ body {
     margin: 30px auto 0 auto;
     display: block;
     opacity: 0.85;
+    width: 22vw;
   }
   #projects-gallery {
     display: flex;
