@@ -38,8 +38,10 @@ body {
       background-color: white;
       box-shadow: 2px 4px 8px gray;
       .gallery-item-image {
-        cursor: pointer;
         width: 70vw;
+        a {
+          cursor: pointer;
+        }
       }
       .gallery-item-caption {
         margin-top: 16px;
