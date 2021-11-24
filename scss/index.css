@@ -19,7 +19,7 @@ body {
   display: inline-block;
   -webkit-box-shadow: 2px 4px 8px gray;
           box-shadow: 2px 4px 8px gray;
-  padding: 20px;
+  padding: 3vw;
   position: relative;
 }
 
