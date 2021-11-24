@@ -13,11 +13,11 @@ body {
     background-color: white;
     border-radius: 1000px;
     cursor: pointer;
-    height: 18vh;
+    width: 12vw;
     margin: 20px auto;
     display: inline-block;
     box-shadow: 2px 4px 8px gray;
-    padding: 30px;
+    padding: 20px;
     position: relative;
   }
 }
@@ -40,7 +40,7 @@ body {
 
     .gallery-item {
       margin: 8px auto;
-      padding: 16px;
+      padding: 16px 16px 34px 16px;
       background-color: white;
       box-shadow: 2px 4px 8px gray;
 
@@ -63,7 +63,7 @@ body {
       }
 
       .gallery-item-caption {
-        margin-top: 16px;
+        margin-top: 24px;
         text-align: center;
       }
     }

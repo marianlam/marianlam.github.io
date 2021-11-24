@@ -14,12 +14,12 @@ body {
   background-color: white;
   border-radius: 1000px;
   cursor: pointer;
-  height: 18vh;
+  width: 12vw;
   margin: 20px auto;
   display: inline-block;
   -webkit-box-shadow: 2px 4px 8px gray;
           box-shadow: 2px 4px 8px gray;
-  padding: 30px;
+  padding: 20px;
   position: relative;
 }
 
@@ -48,7 +48,7 @@ body {
 
 #projects #projects-gallery .gallery-item {
   margin: 8px auto;
-  padding: 16px;
+  padding: 16px 16px 34px 16px;
   background-color: white;
   -webkit-box-shadow: 2px 4px 8px gray;
           box-shadow: 2px 4px 8px gray;
@@ -80,7 +80,7 @@ body {
 }
 
 #projects #projects-gallery .gallery-item .gallery-item-caption {
-  margin-top: 16px;
+  margin-top: 24px;
   text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
