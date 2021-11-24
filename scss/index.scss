@@ -8,13 +8,16 @@ body {
   text-align: center;
   background-image: url("../images/mountains.jpg");
   background-size: cover;
+
   #profile-image {
-    border-radius: 200px;
+    background-color: white;
+    border-radius: 1000px;
     cursor: pointer;
-    height: 25vh;
+    height: 18vh;
     margin: 20px auto;
     display: inline-block;
     box-shadow: 2px 4px 8px gray;
+    padding: 30px;
     position: relative;
   }
 }
@@ -23,26 +26,42 @@ body {
   background-color: #f2f2f2;
   padding: 20px;
   height: auto;
+
   #projects-title {
     margin: 30px auto 0 auto;
     display: block;
     opacity: 0.85;
     width: 22vw;
   }
+
   #projects-gallery {
     display: flex;
     flex-direction: column;
+
     .gallery-item {
       margin: 8px auto;
       padding: 16px;
       background-color: white;
       box-shadow: 2px 4px 8px gray;
+
       .gallery-item-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 70vw;
+
         a {
           cursor: pointer;
         }
       }
+
+      img.gallery-item-image.adjusted {
+        width: 50vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 40px;
+      }
+
       .gallery-item-caption {
         margin-top: 16px;
         text-align: center;
